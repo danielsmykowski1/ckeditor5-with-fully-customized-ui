@@ -1,5 +1,5 @@
 /**
- * @license Copyright (c) 2019, CGJ. All rights reserved.
+ * @license Copyright (c) 2019, Daniel Smykowski. All rights reserved.
  */
 
 import first from '@ckeditor/ckeditor5-utils/src/first';
@@ -48,7 +48,11 @@ export function viewToModelSizeAttribute() {
 
 		if ( conversionApi.consumable.consume( viewFigureElement, { styles: 'width' } ) ) {
 			// And convert this size to model attribute.
-			conversionApi.writer.setAttribute( 'imageSize', viewFigureElement.getStyle('width'), modelImageElement );
+			conversionApi.writer.setAttribute(
+				'imageSize',
+				viewFigureElement.getStyle('width'),
+				modelImageElement
+			);
 		}
 	};
 }

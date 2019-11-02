@@ -1,5 +1,5 @@
 /**
- * @license Copyright (c) 2019, CGJ. All rights reserved.
+ * @license Copyright (c) 2019, Daniel Smykowski. All rights reserved.
  */
 
 import first from '@ckeditor/ckeditor5-utils/src/first';

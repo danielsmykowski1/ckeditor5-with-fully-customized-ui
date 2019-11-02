@@ -198,7 +198,12 @@ export default class BootstrapUI extends EditorUI {
     const colorConfig = editor.config.get('fontColor.colors');
     colorConfig.splice(1, 0, {color: '#212529', label: 'default'});
     colorConfig.map(option => {
-      const menuItem = $(`<li class="dropdown-item"><div class="color-content" style="background-color: ${option.color}"></div></li>`);
+      const menuItem = $(
+        `<li class="dropdown-item">
+          <div class="color-content" style="background-color: ${option.color}">
+          </div>
+        </li>`
+      );
       menuItem.click(() => {
         if (option.label == 'default') {
           editor.execute('fontColor');
@@ -218,7 +223,8 @@ export default class BootstrapUI extends EditorUI {
       onIsEnabledChange();
 
       function onValueChange() {
-        const isActive = command.value == option.color || (!command.value && option.label == 'default');
+        const isActive = command.value == option.color
+                        || (!command.value && option.label == 'default');
         if (isActive) {
           dropdownToggle.children(':first').css('background-color', option.color);
         }
@@ -383,7 +389,12 @@ export default class BootstrapUI extends EditorUI {
 
     const options = ['indent', 'outdent'];
     options.map(option => {
-      const menuItem = $(`<li href="#" class="dropdown-item"><i class="fas fa-${option}"></i></li>`);
+      const menuItem = $(
+        `<li href="#" class="dropdown-item">
+          <i class="fas fa-${option}"></i>
+        </li>`
+      );
+      
       menuItem.click(() => {
         editor.execute(`${option}List`);
         editor.editing.view.focus();

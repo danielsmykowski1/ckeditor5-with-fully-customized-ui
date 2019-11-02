@@ -2020,7 +2020,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "viewToModelPositionAttribute", function() { return viewToModelPositionAttribute; });
 /* harmony import */ var _ckeditor_ckeditor5_utils_src_first__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ckeditor/ckeditor5-utils/src/first */ "./node_modules/@ckeditor/ckeditor5-utils/src/first.js");
 /**
- * @license Copyright (c) 2019, CGJ. All rights reserved.
+ * @license Copyright (c) 2019, Daniel Smykowski. All rights reserved.
  */
 
 
@@ -2100,7 +2100,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ckeditor_ckeditor5_core_src_command__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ckeditor/ckeditor5-core/src/command */ "./node_modules/@ckeditor/ckeditor5-core/src/command.js");
 /* harmony import */ var _image_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../image/utils */ "./custom_image/src/image/utils.js");
 /**
- * @license Copyright (c) 2019, CGJ. All rights reserved.
+ * @license Copyright (c) 2019, Daniel Smykowski. All rights reserved.
  */
 
 /**
@@ -2321,7 +2321,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "viewToModelSizeAttribute", function() { return viewToModelSizeAttribute; });
 /* harmony import */ var _ckeditor_ckeditor5_utils_src_first__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ckeditor/ckeditor5-utils/src/first */ "./node_modules/@ckeditor/ckeditor5-utils/src/first.js");
 /**
- * @license Copyright (c) 2019, CGJ. All rights reserved.
+ * @license Copyright (c) 2019, Daniel Smykowski. All rights reserved.
  */
 
 
@@ -2390,7 +2390,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ckeditor_ckeditor5_core_src_command__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ckeditor/ckeditor5-core/src/command */ "./node_modules/@ckeditor/ckeditor5-core/src/command.js");
 /* harmony import */ var _image_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../image/utils */ "./custom_image/src/image/utils.js");
 /**
- * @license Copyright (c) 2019, CGJ. All rights reserved.
+ * @license Copyright (c) 2019, Daniel Smykowski. All rights reserved.
  */
 
 /**

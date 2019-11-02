@@ -54,14 +54,18 @@ export default class BootStrapEditor extends Editor {
         Paragraph, BoldEditing, ItalicEditing, UnderlineEditing, HeadingEditing,
         FontFamilyEditing, FontSizeEditing, FontColorEditing,
         AlignmentEditing, IndentEditing, IndentBlock, ListEditing,
-        ImageEditing, ImageStyleEditing, ImageCaptionEditing, ImageZIndexEditing, ImageSizeEditing, ImagePositionEditing,
+        ImageEditing, ImageStyleEditing, ImageCaptionEditing,
+        ImageZIndexEditing, ImageSizeEditing, ImagePositionEditing,
         Widget, PendingActions
       ],
       fontSize: {
         options: [8, 9, 10, 11, 12, 14, 'default', 16, 18, 20, 22, 24, 26, 28, 36, 48, 72]
       },
       image: {
-        styles: ['full', 'side', 'alignLeft', 'alignCenter', 'alignRight', 'absoluteImage', 'inlineImage'],
+        styles: [
+          'full', 'side', 'alignLeft', 'alignCenter',
+          'alignRight', 'absoluteImage', 'inlineImage'
+        ],
         zindexes: ['front', 'back']
       }
     });

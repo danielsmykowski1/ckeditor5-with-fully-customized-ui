@@ -57,7 +57,10 @@ export default class ImagePositionEditing extends Plugin {
 		let computedLeft = 0, computedTop = 0;
 
 		this.editor.editing.view.document.on('mousedown', (evt, data) => {
-			if (data.domEvent.buttons == 1 && $(data.domTarget).is('img') && $(data.domTarget).parent().is('.image-style-absolute')) {
+			if (data.domEvent.buttons == 1
+				&& $(data.domTarget).is('img')
+				&& $(data.domTarget).parent().is('.image-style-absolute')
+			) {
 				positionStarted = true;
 				positionedElement = $(data.domTarget).parent().get(0);
 				computedLeft = positionedElement.offsetLeft;
