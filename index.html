@@ -18,15 +18,15 @@
     <div id="constructionNotesAdd">
       <div class="notes-header">
         <div class="left-side">
-          <i class="fas fa-arrow-left" ng-click="vm.goHome()"></i>
-          <span ng-click="vm.goHome()">Note Editor</span>
+          <i class="fas fa-arrow-left"></i>
+          <span>Note Editor</span>
         </div>
         <div class="right-side">
           <i class="fas fa-share-alt"></i>
           <i class="fas fa-download"></i>
           <i class="fas fa-trash-alt"></i>
-          <i class="fas fa-times" ng-if="vm.isEditPanel" ng-click="vm.toggleEditPanel(false)"></i>
-          <i class="fa fa-pencil-alt" ng-if="!vm.isEditPanel" ng-click="vm.toggleEditPanel(true)"></i>
+          <i class="fas fa-times"></i>
+          <i class="fa fa-pencil-alt"></i>
         </div>
       </div>
       <div class="notes-editor">
@@ -49,33 +49,60 @@
           <i class="fas fa-angle-left"></i>
           <i class="fas fa-angle-right"></i>
         </div>
-        <div class="notes-editor__tool-panel" ng-class="['notes-editor__tool-panel', {'hide': !vm.isEditPanel}]">
+        <div class="notes-editor__tool-panel">
           <div class="btn-group btn-group-toggle toggle-panel" data-toggle="buttons">
             <label class="btn btn-light btn-sm active" ng-click="vm.toggleToolPanel(true)">
               <input type="radio" name="options" id="option1" autocomplete="off" checked> TEXT
             </label>
-            <label class="btn btn-light btn-sm" ng-click="vm.toggleToolPanel(false)">
+            <label class="btn btn-light btn-sm">
               <input type="radio" name="options" id="option2" autocomplete="off"> MEDIA
             </label>
           </div>
           <div class="tool-panels">
-            <div class="panel panel-text" ng-class="['panel', 'panel-text', {'hide': !vm.isTextPanel}]">
+            <div class="panel panel-text"">
               <div class="panel-part">
                 <label class="panel-part-header">Font</label>
                 <div class="panel-part-body">
                   <div class="btn-group" role="group" aria-label="font-families">
                     <div class="dropdown font-family">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Montserrat</span><div class="right-shadow"/></button>
+                      <button
+                        class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span>Montserrat</span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="font-family-button"></div>
                     </div>
                   </div>
                   <div class="btn-group font-weight-size" role="group" aria-label="font-weight-size">
                     <div class="dropdown font-weight">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Regular</span><div class="right-shadow"/></button>
+                      <button
+                        class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span>Regular</span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="font-weight-button"></div>
                     </div>
                     <div class="dropdown font-size">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>14</span><div class="right-shadow"/></button>
+                      <button
+                        class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span>14</span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="font-weight-button"></div>
                     </div>
                   </div>
@@ -86,11 +113,27 @@
                       <button type="button" class="btn btn-light btn-sm" id="underline">U</button>
                     </div>
                     <div class="dropdown font-transform">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Aa</span><div class="right-shadow"/></button>
+                      <button class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span>Aa</span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="font-transform-button"></div>
                     </div>
                     <div class="dropdown font-color">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="color-shower"></div><div class="right-shadow"/></button>
+                      <button class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <div class="color-shower"></div>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="font-color-button"></div>
                     </div>
                   </div>
@@ -100,19 +143,25 @@
                 <label class="panel-part-header">Alignment</label>
                 <div class="panel-part-body">
                   <div class="btn-group btn-group-toggle align-group">
-                    <button class="btn btn-light btn-sm btn-align-left active"><i class="fas fa-align-left"></i>
+                    <button class="btn btn-light btn-sm btn-align-left active">
+                      <i class="fas fa-align-left"></i>
                     </button>
-                    <button class="btn btn-light btn-sm btn-align-center"><i class="fas fa-align-center"></i>
+                    <button class="btn btn-light btn-sm btn-align-center">
+                      <i class="fas fa-align-center"></i>
                     </button>
-                    <button class="btn btn-light btn-sm btn-align-right"><i class="fas fa-align-right"></i>
+                    <button class="btn btn-light btn-sm btn-align-right">
+                      <i class="fas fa-align-right"></i>
                     </button>
-                    <button class="btn btn-light btn-sm btn-align-justify"><i class="fas fa-align-justify"></i>
+                    <button class="btn btn-light btn-sm btn-align-justify">
+                      <i class="fas fa-align-justify"></i>
                     </button>
                   </div>
                   <div class="btn-group btn-group-toggle indent-toggle">
-                    <button class="btn btn-light btn-sm indent-btn"> <i class="fas fa-indent"></i>
+                    <button class="btn btn-light btn-sm indent-btn">
+                      &nbsp;<i class="fas fa-indent"></i>
                     </button>
-                    <button class="btn btn-light btn-sm outdent-btn"> <i class="fas fa-outdent"></i>
+                    <button class="btn btn-light btn-sm outdent-btn">
+                      &nbsp;<i class="fas fa-outdent"></i>
                     </button>
                   </div>
                 </div>
@@ -122,11 +171,27 @@
                 <div class="panel-part-body">
                   <div class="btn-group letter-line-spacing" role="group" aria-label="font-weight-size">
                     <div class="dropdown" id="letter-spacing">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Regular</span><div class="right-shadow"/></button>
+                      <button class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span>Regular</span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="letter-spacing-button"></div>
                     </div>
                     <div class="dropdown" id="line-spacing">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>14</span><div class="right-shadow"/></button>
+                      <button class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span>14</span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="line-spacing-button"></div>
                     </div>
                   </div>
@@ -137,15 +202,39 @@
                 <div class="panel-part-body">
                   <div class="btn-group bullets-lists" role="group" aria-label="font-families">
                     <div class="dropdown bulleted-list">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-list-ul"></span><div class="right-shadow"/></button>
+                      <button class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span class="fas fa-list-ul"></span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="bulleted-list-button"></div>
                     </div>
                     <div class="dropdown numbered-list">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-list-ol"></span><div class="right-shadow"/></button>
+                      <button class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span class="fas fa-list-ol"></span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="numbered-list-button"></div>
                     </div>
                     <div class="dropdown multilevel-list">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fas fa-stream"></span><div class="right-shadow"/></button>
+                      <button class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span class="fas fa-stream"></span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="multilevel-list-button"></div>
                     </div>
                   </div>
@@ -162,11 +251,28 @@
                   </div>
                   <div class="btn-group image-position" role="group" aria-label="font-weight-size">
                     <div class="dropdown image-style">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Full size</span><div class="right-shadow"/></button>
+                      <button class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span>Full size</span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="font-weight-button"></div>
                     </div>
                     <div class="dropdown image-back-front">
-                      <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Bihind Text</span><div class="right-shadow"/></button>
+                      <button
+                        class="btn btn-light btn-sm dropdown-toggle"
+                        type="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span>Bihind Text</span>
+                        <div class="right-shadow"/>
+                      </button>
                       <div class="dropdown-menu" aria-labelledby="font-weight-button"></div>
                     </div>
                   </div>
